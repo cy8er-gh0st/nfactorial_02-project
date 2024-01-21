@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #F1F1F1;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+}
+
+.left_header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right_header{
+    display: flex;
+    gap: 40px
+}
+
+
+.logo{
+    font-weight: bold;
+}
+
+.logo_img{
+    /* magnifier 1 */
+width: 18.68px;
+height: 22px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
+.not_active{
+    border: 0;
+    background-color: transparent;
+}
+
+.active{
+    border-radius: 100px;
+    border: 0;
+    background-color: #081E341F;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.container{
+    /* width: 100%; */
+    padding-left:80px;
+    padding-right:80px;
+    padding-top: 100px;
+    padding-bottom:100px;
+    display: flex;
+    gap: 165px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_text{
+    font-weight: 700;
+    font-size: 54px;
+}
+
+.discription_text{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+.main_btn{
+    background-color: #712fff;
+    border: 0;
+    color: white;
+    padding: 16px 24px 16px 24px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    width: fit-content;
+}
+
+.cv_btn{
+    background-color: #712fff;
+    border: 0;
+    color: white;
+    padding: 16px 24px 16px 24px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    width: fit-content;
+}
+
+.main_btn:hover {
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    background-color:rgb(255, 255, 255);
+    color:rgb(67, 67, 67);
+}
+
+.left_content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+/* .right_content {
+    width: 100%;
+  height: 458px;
+  background-image: url('./images/image-main.png');
+  background-repeat: no-repeat;
+} */
+
+.main_image{
+    border-radius: 32px;
+}
+
+
+.container_how-it-works{
+    /* width: 100%; */
+    padding-left:80px;
+    padding-right:80px;
+    padding-top: 100px;
+    /* padding-bottom:100px; */
+    background-color: #E1DEE7;
+    border-radius: 32px;
+    
+}
+
+.how-it-works_text{
+    padding-bottom: 86px;
+    align-items: center;
+    text-align: center;
+}
+
+.miner_text{
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 12px;
+}
+
+.container_steps{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+
+
+.steps_main_text{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 48px;
+    padding-bottom: 24px;
+}
+
+.steps_miner_text{
+font-size: 16px;
+font-weight: 500;
+}
+
+.main_text_paddings{
+    padding-bottom: 32px;
+}
+
+.description_text_paddings{
+    padding-bottom: 32px;
+}
+
+.input-container{
+    padding-left: 49px;
+    width: 619px;
+    height: 50px;
+    padding: 13px, 75px, 13px, 13px;
+    border-radius: 12px;
+    border: 1px;
+    background-color: white;
+    margin-right: 32px;
+}
+
+.container_cv{
+    align-items: center;
+}
+
+
+footer{
+    padding-left:80px;
+    padding-right:80px;
+    background-color: white;
+    border-radius: 32px 32px 0px 0px;
+}
+.footer{
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer_text_author{
+    font-weight: 500;
+    font-size: 14px;
+    filter: grayscale(100%);
+    padding-bottom: 32px;
+    padding-top: 42px;
+}
+
+.footer_text_credits{
+    color: #081E34;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 50%;
+    
+}
+    
+.footer_nav{
+    align-items: baseline;
+    justify-content: space-between;
+    
+}
+.footer_nav a{
+    padding-right: 28px;
+    text-decoration: none;
+}
+
+.footer_nav i{
+    padding-right: 16px;
+}
+
+.footer_text_content{
+    display: flex;
+    justify-content: end;
+        }
+
+
+        /* Общие стили для мобильных устройств */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .header {
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .left_header {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right_header {
+        gap: 20px;
+        align-items: center;
+    }
+
+    .not_active{
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding: 50px 24px;
+        text-align: center;
+        
+    }
+
+    .main_text {
+        font-size: 32px;
+    }
+
+    .description_text {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .main_btn {
+        font-size: 12px;
+        padding: 12px 20px;
+        align-self: center;
+    }
+
+    .main_image {
+        width: 100%;
+    }
+
+    .container_how-it-works {
+        padding: 54px 24px;
+    }
+
+    .how-it-works_text {
+        padding-bottom: 40px;
+    }
+
+    .miner_text {
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+
+    .container_steps {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .steps_main_text {
+        font-size: 20px;
+        padding-top: 20px;
+        /* padding-bottom: 12px; */
+    }
+
+    .steps_miner_text {
+        font-size: 14px;
+        padding-top: 12px;
+        padding-bottom: 40px;
+    }
+
+    .main_text_paddings,
+    .description_text_paddings {
+        padding-bottom: 20px;
+    }
+
+    .input-container {
+        width: 100%;
+        margin-right: 0;
+        padding-left: 49px;
+        margin-bottom: 32px;
+        width: 312px;
+        height: 50px;
+        padding: 13px, 75px, 13px, 13px;
+        border-radius: 12px;
+        border: 1px;
+        background-color: white;
+    }
+
+    .container_cv {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .cv_btn{
+        font-size: 12px;
+        padding: 12px 20px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer {
+        display: inline-block;
+    }
+
+    .footer_nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .footer_nav a {
+        padding: 10px 0;
+    }
+
+    .footer_nav i {
+        padding-right: 0;
+        padding-bottom: 16px;
+    }
+
+    .footer_text_author,
+    .footer_text_credits {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer_text_content{
+        justify-content: flex-start;
+    }
+}
